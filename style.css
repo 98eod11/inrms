@@ -1,0 +1,131 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 5%;
+  background: #16dfdf;
+  border-bottom: 1px solid #ddd;
+  color: #f4f4f4;
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+}
+
+header img {
+  max-height: 60px;
+  width: auto;
+}
+
+.snipcart-checkout {
+  white-space: nowrap;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(25, 10, 241, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.product-info h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.product-info p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.snipcart-add-item {
+  background: #16dfdf;
+  color: #f4f4f4;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.snipcart-add-item:hover {
+  background: #14c9c9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 20px 5%;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #16dfdf;
+  color: #f4f4f4;
+  margin-top: 40px;
+}
+
+.snipcart-checkout {
+  background: #333;
+  color: #f4f4f4;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.snipcart-checkout:hover {
+  background: #555;
+}
