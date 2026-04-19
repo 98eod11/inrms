@@ -19,7 +19,8 @@
         alt="INRMS chest quote design on white background"
       />
       <h1>INRMSApparel</h1>
-      <button class="snipcart-checkout" aria-label="View Cart">                       <i class="fas fa-shopping-bag"></i>
+      <button class="snipcart-checkout" aria-label="View Cart">
+        <i class="fas fa-shopping-bag"></i>
         <span class="snipcart-items-count">0</span>
       </button>
     </header>
@@ -44,10 +45,9 @@
               class="snipcart-add-item"
               data-item-id="faded-black"
               data-item-price="45.00"
-              data-item-description="Oversized INRMS Tee -Faded Black"
+              data-item-description="Oversized INRMS Tee - Faded Black"
               data-item-image="./assets/mockups/fullfront-verback-bl/faded-black-front.png"
               data-item-name="Faded Black Oversized TShirt"
-              data-item-url="./"
             >
               Add to Cart
             </button>
@@ -75,7 +75,6 @@
               data-item-description="Oversized INRMS Tee - Faded Bone"
               data-item-image="./assets/mockups/fullfront-verback-wh/mens-oversized-faded-t-shirt-faded-bone-front-69e0ef480a24c.png"
               data-item-name="Faded Bone Oversized TShirt"
-              data-item-url="./"
             >
               Add to Cart
             </button>
@@ -103,7 +102,6 @@
               data-item-description="Oversized INRMS Tee - Faded Eucalyptus"
               data-item-image="./assets/mockups/leftchest-horback-bl/mens-oversized-faded-t-shirt-faded-eucalyptus-front-69e0f5413f217.png"
               data-item-name="Faded Eucalyptus Oversized TShirt"
-              data-item-url="./"
             >
               Add to Cart
             </button>
@@ -131,7 +129,6 @@
               data-item-description="Oversized INRMS Tee - Faded Khaki"
               data-item-image="./assets/mockups/leftchest-horback-wh/mens-oversized-faded-t-shirt-faded-khaki-front-69e0f318a45c6.png"
               data-item-name="Faded Khaki Oversized TShirt"
-              data-item-url="./"
             >
               Add to Cart
             </button>
@@ -145,22 +142,25 @@
     </footer>
 
     <!-- Snipcart Integration -->
-<script>
-  window.SnipcartSettings = {
-    publicApiKey: 'YTQzMGUzMTctOTYyNC00YzdjLTg3YWItYmYyOTIzMDE4NTA1NjM5MTIwNTQxMDMyNjk1Mjc0',
-    loadStrategy: 'on-user-interaction',
-  };
-</script>
-<script
-  async
-  src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"
-></script>
-<div
-  id="snipcart"
-  data-api-key="YTQzMGUzMTctOTYyNC00YzdjLTg3YWItYmYyOTIzMDE4NTA1NjM5MTIwNTQxMDMyNjk1Mjc0"
-  hidden
-></div>
+    <script>
+      window.SnipcartSettings = {
+        publicApiKey: 'YTQzMGUzMTctOTYyNC00YzdjLTg3YWItYmYyOTIzMDE4NTA1NjM5MTIwNTQxMDMyNjk1Mjc0',
+        loadStrategy: 'on-user-interaction',
+        modalOptions: {
+          autoOpenCart: false
+        }
+      };
+    </script>
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-api-key="YTQzMGUzMTctOTYyNC00YzdjLTg3YWItYmYyOTIzMDE4NTA1NjM5MTIwNTQxMDMyNjk1Mjc0"
+      hidden
+    ></div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
